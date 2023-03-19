@@ -1,0 +1,253 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 0 20px;
+	margin: 0;
+	background: hsl(222, 26%, 31%);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 540px;
+	width: 100%;
+	height: 710px;
+}
+
+.configSec {
+	display: flex;
+	justify-content: space-between;
+}
+
+.appTitle {
+	align-self: flex-end;
+	font-family: 'League Spartan', sans-serif;
+	font-size: 22px;
+	color: hsl(0, 0%, 100%);
+	margin: 0;
+}
+
+.themeArea {
+	display: flex;
+	justify-content: space-between;
+	max-width: 140px;
+	width: 100%;
+	height: 43px;
+}
+
+.themeArea p {
+	align-self: flex-end;
+	font-family: 'League Spartan', sans-serif;
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: hsl(0, 0%, 100%);
+	margin-bottom: 4px;
+}
+
+.radiosArea {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 70px;
+	width: 100%;
+	height: 45px;
+}
+
+.labels {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.numberTheme {
+	align-self: flex-start;
+	font-family: 'League Spartan', sans-serif;
+	font-size: 12px;
+	color: hsl(0, 0%, 100%);
+}
+
+.inputs {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 26px;
+	border-radius: 13px;
+	background: hsl(223, 31%, 20%);
+	box-sizing: border-box;
+    padding: 0 6px;
+}
+
+.inputs input {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inputs .inputStyle1:after {
+	position: absolute;
+	content: "";
+	border: 8px solid hsl(223, 31%, 20%);
+	border-radius: 100%;
+}
+
+.inputs .inputStyle1:checked:before {
+	position: absolute;
+	content: "";
+	border: 7px solid hsl(6, 63%, 50%);
+	border-radius: 100%;
+	z-index: 1;
+}
+
+.inputs .inputStyle2:after {
+	position: absolute;
+	content: "";
+	border: 8px solid rgb(209, 204, 204);
+	border-radius: 100%;
+}
+
+.inputs .inputStyle2:checked:before {
+	position: absolute;
+	content: "";
+	border: 7px solid rgb(202, 85, 2);
+	border-radius: 100%;
+	z-index: 1;
+}
+
+.inputs .inputStyle3:after {
+	position: absolute;
+	content: "";
+	border: 8px solid rgb(29, 9, 52);
+	border-radius: 100%;
+}
+
+.inputs .inputStyle3:checked:before {
+	position: absolute;
+	content: "";
+	border: 7px solid rgb(0, 224, 209);
+	border-radius: 100%;
+	z-index: 1;
+}
+
+/*input[type=radio]*/
+
+.displaySec {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	height: 127px;
+	box-sizing: border-box;
+	padding: 33px;
+	background: hsl(224, 36%, 15%);
+	border-radius: 15px;
+}
+
+.resultDisplay {
+	font-family: 'League Spartan', sans-serif;
+	font-size: 50px;
+	color: hsl(0, 0%, 100%);
+	line-height: 0;
+}
+
+.buttonsSec {
+	display: grid;
+	width: 100%;
+	background: hsl(223, 31%, 20%);
+	border-radius: 15px;
+	box-sizing: border-box;
+	padding: 30px;
+	grid-row-gap: 25px;
+	grid-template-areas: 
+	"btn_top"
+	"btn_down"
+	;
+}
+
+.btn_top {
+	grid-area: btn_top;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(4, 64px);
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+}
+
+.btn_down {
+	grid-area: btn_down;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 64px;
+	grid-column-gap: 25px;
+}
+
+/* BTNs Style */
+
+.commomBtn {
+	border: none;
+	border-bottom: 4px solid hsl(28, 16%, 65%);
+	border-radius: 10px;
+	background: hsl(30, 25%, 89%);
+	font-family: 'League Spartan', sans-serif;
+	font-size: 32px;
+	color: hsl(221, 14%, 31%);
+	line-height: 2;
+}
+
+.reset_del_Btn {
+	border: none;
+	border-bottom: 4px solid hsl(224, 28%, 35%);
+	border-radius: 10px;
+	background: hsl(225, 21%, 49%);
+	font-family: 'League Spartan', sans-serif;
+	font-size: 32px;
+	color: hsl(0, 0%, 100%);
+	line-height: 2;
+}
+
+.equalBtn {
+	border: none;
+	border-bottom: 4px solid hsl(6, 70%, 34%);
+	border-radius: 10px;
+	background: hsl(6, 63%, 50%);
+	font-family: 'League Spartan', sans-serif;
+	font-size: 32px;
+	color: hsl(0, 0%, 100%);
+	line-height: 2;
+}
+
+@media(max-width: 500px) {
+	main {
+		height: 600px;
+	}
+
+	.displaySec {
+		height: 85px;
+	}
+
+	.resultDisplay {
+		font-size: 40px;
+	}
+
+	.buttonsSec {
+		grid-row-gap: 10px;
+		padding: 20px; 
+	}
+
+	.btn_top {
+		grid-row-gap: 10px;
+		grid-column-gap: 10px;
+	}
+
+	.btn_down {
+		grid-row-gap: 10px;
+		grid-column-gap: 10px;
+	}
+
+	.reset_del_Btn {
+		font-size: 20px;
+	}
+}

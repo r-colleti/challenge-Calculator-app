@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body>
+
+  <main>
+    
+    <section class="configSec">
+
+      <h2 class="appTitle">calc</h2>
+
+      <div class="themeArea">
+
+        <p>THEME</p>
+
+        <div class="radiosArea">
+          <div class="labels">
+            <label for="1" class="numberTheme">1</label>
+            <label for="2" class="numberTheme">2</label>
+            <label for="3" class="numberTheme">3</label>
+          </div>
+          <div class="inputs">
+            <input class="inputStyle1" onclick="changeTheme(value)" value="1" type="radio" name="theme" checked>
+            <input class="inputStyle1" onclick="changeTheme(value)" value="2" type="radio" name="theme">
+            <input class="inputStyle1" onclick="changeTheme(value)" value="3" type="radio" name="theme">
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <section class="displaySec">
+      <span class="resultDisplay">0</span>
+    </section>
+
+    <section class="buttonsSec">
+
+      <section class="btn_top">
+
+        <button class="commomBtn" name="7" value="7">7</button>
+        <button class="commomBtn" name="8" value="8">8</button>
+        <button class="commomBtn" name="9" value="9">9</button>
+        <button class="reset_del_Btn" name="DEL" value="DEL">DEL</button>
+        <button class="commomBtn" name="4" value="4">4</button>
+        <button class="commomBtn" name="5" value="5">5</button>
+        <button class="commomBtn" name="6" value="6">6</button>
+        <button class="commomBtn" name="+" value="+">+</button>
+        <button class="commomBtn" name="1" value="1">1</button>
+        <button class="commomBtn" name="2" value="2">2</button>
+        <button class="commomBtn" name="3" value="3">3</button>
+        <button class="commomBtn" name="-" value="-">-</button>
+        <button class="commomBtn" name="." value=".">.</button>
+        <button class="commomBtn" name="0" value="0">0</button>
+        <button class="commomBtn" name="/" value="/">/</button>
+        <button class="commomBtn" name="X" value="*">X</button>
+        
+      </section>
+
+      <section class="btn_down">
+
+        <button class="reset_del_Btn" name="RESET" value="RESET">RESET</button>
+        <button class="equalBtn" name="=" value="=">=</button>
+        
+      </section>
+      
+    </section>
+
+  </main>
+
+  <script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>
